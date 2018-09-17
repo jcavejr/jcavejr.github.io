@@ -19,19 +19,31 @@
 
     <title>Jeffrey Cave | Portfolio</title>
 
-    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 </head>
 
 <body>
-    <nav>
-        <p>Navbar stuff here</p>
+    <!-- <nav class="navbar navbar-default navbar-fixed-top" role="navigation"> -->
+    <nav class="navbar navbar-fixed-top" role="navigation">
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
     </nav>
-    <header>
+    <section id="intro" class="jumbotron">
+        <div class="header-bg">
+            <img src="images/header-bg.jpg" alt="" class="header-bg-img"/>
+        </div>
+        <img src="images/eagles-headshot.jpg" alt="headshot" class="img-circle" width="200em" height="200em"/>
         <h1>Jeffrey Cave</h1>
-    </header>
+        <p>Hi, I'm an upcoming Computer Science graduate from Cherry Hill, New Jersey.</p>
+        <p>I am definitely <strong>not</strong> a designer, so I hope the blandness of this page isn't a big deal.</p>
+    </section>
     <main>
         <h2>About Me</h2> 
         <h2>Projects</h2>
@@ -39,6 +51,10 @@
     </main>
     <footer>
         <p>Copyright and other info here</p>
+        <p>Photo Credits:</p>
+        <ul>
+            <li>Photo by David Monje on Unsplash</li>
+        </ul>
     </footer>
 </body>
 </html>

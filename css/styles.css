@@ -1,3 +1,39 @@
 body {
     font-family: calibri;
 }
+
+#intro {
+    display: block;
+    background-color: transparent;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+nav {
+    background-color: #ffffff;
+    color: black;
+}
+
+.header-bg {
+    background-color: #212121;
+    overflow: hidden;
+    z-index: -99998;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.header-bg-img {
+    z-index: -99999;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
