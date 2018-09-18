@@ -15,8 +15,12 @@
     crossorigin="anonymous">
 </script>
 <script src="js/smooth-scroll.js"></script>
+<script src="js/sticky.js"></script>
 <script>
-    $(document).ready(function() {smoothScroll()});
+    $(document).ready(function() {
+        smoothScroll();
+        window.onscroll = function() {setSticky()};
+    });
 </script>
 
 <head>
@@ -58,7 +62,6 @@
             </ul>
         </nav>
     </div>
-    <script src="js/sticky.js"></script>
     <main>
         <section id="about">
             <div class="container">
