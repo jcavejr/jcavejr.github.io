@@ -14,7 +14,32 @@
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
     crossorigin="anonymous">
 </script>
-
+<script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
 
 <head>
     <meta charset="utf-8">
@@ -36,7 +61,6 @@
             <img src="images/header-bg.jpg" alt="" class="header-bg-img"/>
         </div>
         <div class="header-content">
-            <img src="images/eagles-headshot.jpg" alt="headshot" class="img-circle" width="200em" height="200em"/>
             <div>
                 <h1 class="header-text">Jeffrey Cave</h1>
                 <p class="header-text">Hi, I'm an upcoming Computer Science graduate from Cherry Hill, New Jersey.</p>
@@ -47,7 +71,7 @@
     <div id="navbar">
         <nav id="nav" class="nav container" role="navigation">
             <ul class="nav navbar-nav">
-                <li><a href="#home">HOME</a></li>
+                <li><a href="#intro">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#experience">EXPERIENCE</a></li>
@@ -57,28 +81,35 @@
         </nav>
     </div>
     <script src="js/sticky.js"></script>
-    <main class="container">
+    <main>
         <section id="about">
             <div class="container">
-            <div class="row">
-                <div class="col-full">
-                    <h2 class="section-header">About Me</h2> 
+                <div class="row">
+                    <div class="col-full">
+                        <h2 class="section-header">About Me</h2> 
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-4 section-content">
-                    <p>*Insert another picture of me here*</p>
+                <div class="row">
+                    <div class="col-xs-4 section-content">
+                        <img src="images/eagles-portrait.jpg" alt="portrait" class="portrait"/>
+                    </div>
+                    <div class="col-xs-4 section-content">
+                        <h3><strong>Technical Mindset</strong></h3>
+                        <p>Whether it's to address a particular issue, explore a new technology, or learn how something works, I like tinkering with things.</p>
+                        <p>Ever since I built my first computer, my means of tinkering with things has been on a computer. Programming little mini projects, configuring Linux to exactly how I want it, and installing new software to test out are some activities that I can become heavily invested in.</p>
+                    </div>
+                    <div class="col-xs-4 section-content">
+                        <h3><strong>How I Have Fun</strong></h3>
+                        <p>What do I like to do when I'm not doing something computer related? Well, lots of things:</p>
+                        <ul>
+                            <li>I picked up golf in the summer of 2018. I'm not very good at it but it's a lot of fun!</li>
+                            <li>Watching the Eagles. I watch the Eagles play every weekend, go birds!</li>
+                            <li>I try to read when I can. My favorite book so far is Hitchhiker's Guide to the Galaxy.</li>
+                            <li>Cooking. I used to eat junk for just about every meal, then I started cooking. I meal prep every Sunday, it's fun, healthy, and tastes delicious!</li>
+                            <li>Working out. While I was losing weight I would go to the gym 5-6 times every week, but now I'm at a pretty good spot so I only go a couple times per week. It's mostly weight training, but sometimes I throw in a little cardio.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-xs-4 section-content">
-                    <h3><strong>Technical Mindset</strong></h3>
-                    <p>Whether it's to address a particular issue, explore a new technology, or learn how something works, I like tinkering with things.</p>
-                    <p>Ever since I built my first computer, my means of tinkering with things has been on a computer. Programming little mini projects, configuring Linux to exactly how I want it, and installing new software to test out are some activities that I can become heavily invested in.</p>
-                </div>
-                <div class="col-xs-4 section-content">
-                    <h3><strong>How I Have Fun</strong></h3>
-                    <p>col 3</p>
-                </div>
-            </div>
             </div>
         </section>
         <section id="projects">
