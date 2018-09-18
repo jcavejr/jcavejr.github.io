@@ -51,9 +51,24 @@ p.header-text {
     font-size: 1.75em;
 }
 
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 nav {
-    background-color: #ffffff;
+    background-color: #333;
     color: black;
+}
+
+section {
+    padding: 75px;
 }
 
 h2.section-header {
