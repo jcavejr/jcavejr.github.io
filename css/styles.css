@@ -70,7 +70,7 @@ nav {
 
 section {
     padding: 75px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .portrait {
