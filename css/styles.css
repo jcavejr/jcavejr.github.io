@@ -86,3 +86,14 @@ h2.section-header {
 .section-content {
     font-size: 1.25em;
 }
+
+h3.section-subheader {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.no-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
